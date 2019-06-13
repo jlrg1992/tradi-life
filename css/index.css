@@ -1,0 +1,20 @@
+
+
+#mymap {
+    height: calc(100% - 55px);
+    width: 100%;
+    position: absolute !important;
+}
+
+.navbar{
+    background-color: #41c0d1;
+    color:white;
+}
+
+.navbar a{
+    background-color: #58d0e0;
+    color: white;
+}
+.title{
+    text-align: center;
+}

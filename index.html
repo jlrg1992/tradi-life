@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#007aff">
+    <!-- Your app title -->
+    <title>Misa Tradicional</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="framework7/css/framework7.bundle.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+	<link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div class="page" data-name="inicio">
+
+            <div class="navbar">
+                <div class="navbar-inner">
+              
+              <div class="title">Mapa</div>
+              <div class="right"><a href="/mapa/" class="link">Lista</a></div>
+                </div>
+              </div>
+
+            
+
+            <div class="page-content">
+              <div id="mymap"></div>
+              <!-- Link to another page -->
+            </div>
+
+
+
+          </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="framework7/js/framework7.bundle.min.js"></script>
+    <!-- Path to your app js-->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+  <script src="js/loc.js"></script>
+  <script src="js/index.js"></script>
+  </body>
+</html>
