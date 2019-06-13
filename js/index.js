@@ -94,7 +94,7 @@ mymap.locate({setView: true, maxZoom: 16});
 
 function onLocationFound(e) {
     var radius = e.accuracy;
-    L.circle(e.latlng, radius).addTo(map);
+    L.circle(e.latlng, radius).addTo(mymap);
 }
 
 mymap.on('locationfound', onLocationFound);
