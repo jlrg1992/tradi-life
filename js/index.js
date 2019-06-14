@@ -1,5 +1,5 @@
 // Global variables
-let place = locaciones[0];
+let place = locaciones[1];
 let mymap;
 let marker;
 
@@ -36,7 +36,7 @@ function runMap(){
     marker = L.marker(place.coordinates).addTo(mymap);
     marker.setLatLng(place.coordinates);
     marker.bindPopup("<b>Horario:</b><br> "+place.horario);
-    L.circle(place.coordinates, 15).addTo(mymap);
+    L.circle(place.coordinates, 5).addTo(mymap);
 }
 
 
@@ -57,7 +57,7 @@ function getListaMisas(){
                         </div></a>
                     <div class="accordion-item-content">
                         <div class="block">
-                            <p>${locaciones[l].horario} <a onclick="setCoordinates(this)" class="loc-hold" data-mapa-loc="${l}" href="/inicio/">Ver mapa</a></p>
+                            <p>${locaciones[l].horario}</p><a onclick="setCoordinates(this)" class="loc-hold button button-raised button-fill button-round" data-mapa-loc="${l}" href="/inicio/">Ver mapa</a></p>
                         </div>
                     </div>
                     </li>`
